@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F3F3;
+    width: 375px;
+}
+
+.header {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header img {
+    width: 75px;
+    height: 53px;
+}
+
+.header ion-icon {
+    width: 42px;
+    height: 42px;
+    
+}
+
+.teste {
+    height: 1000px;
+}
+
+.footer {
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.footer ion-icon {
+    height: 26px;
+    width: 26px;
+}
+
+input {
+    border: none;
+    
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+}
+
+input::placeholder {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
