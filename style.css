@@ -1,25 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
     box-sizing: border-box;
+    width: 100%;
 }
 
 body {
-    background-color: #F3F3F3;
-    width: 375px;
+    font-family: 'Roboto';
 }
 
 .header {
-    background-color: white;
     height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 22px;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 0 17px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.header img {
+img {
     width: 75px;
     height: 53px;
 }
@@ -27,35 +29,45 @@ body {
 .header ion-icon {
     width: 42px;
     height: 42px;
-    
 }
 
-.teste {
-    height: 1000px;
+.chat {
+    min-height: 500px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    background-color: #F3F3F3;
+    padding: 20px 0px 5px 0px;
+    margin: 80px 0px;
+    
 }
 
 .footer {
     height: 80px;
-    background-color: white;
+    font-family: 'Roboto';
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
     padding: 0 17px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .footer ion-icon {
     height: 26px;
     width: 26px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
-input {
+.footer input {
+    font-weight: 400;
+    font-size: 18px;
     border: none;
-    
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
+    outline: 0;
 }
 
 input::placeholder {
@@ -68,4 +80,37 @@ input::placeholder {
 input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
+}
+
+.chat div {
+    margin: 5px 0px 5px 0px;
+    padding: 10px;
+    word-break: break-all;
+    line-height: 20px;
+}
+
+.status {
+    background-color: #DCDCDC;
+}
+
+.msgGeral {
+    background-color: #FFFFFF;
+}
+
+.msgReservada {
+    background-color: #FFDEDE;
+}
+
+.time {
+    color:#B0B0B0;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.user {
+    font-weight: 700;
+}
+
+.text {
+    font-weight: 500;
 }
